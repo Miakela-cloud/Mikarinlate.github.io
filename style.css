@@ -1,0 +1,273 @@
+body {
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(3, 2, 3));
+
+    text-align: center;
+
+    font-family: Arial, sans-serif;
+
+    margin: 0;
+
+    padding: 0;
+}
+
+.card {
+    background: rgb(0, 0, 0);
+
+    width: 350px;
+
+    margin: 50px auto;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    box-shadow: 0px 0px 20px gray;
+
+    transition: 0.4s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.languages-box,
+.hobbies-box {
+    background: rgb(40, 40, 40);
+
+    width: 250px;
+
+    margin: auto;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    list-style: none;
+
+    box-shadow: 0px 0px 15px rgb(235, 234, 235);
+}
+
+.profile-img {
+    width: 180px;
+
+    height: 180px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    box-shadow: 0px 0px 20px white;
+
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+h1 {
+    color: rgb(211, 131, 245);
+
+    font-size: 40px;
+}
+
+h3 {
+    color: rgb(211, 131, 245);
+
+    font-size: 25px;
+}
+
+p,
+ul {
+    color: rgb(197, 115, 235);
+
+    font-size: 18px;
+}
+
+ul {
+    padding: 0;
+
+    margin: 0;
+
+    list-style: none;
+}
+
+li {
+    margin: 10px;
+}
+
+button {
+    background: blueviolet;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 20px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition: 0.4s ease;
+
+    margin: 10px;
+
+    width: 100%;
+}
+
+button:hover {
+    background: darkblue;
+
+    transform: scale(1.05);
+
+    box-shadow: 0px 0px 20px violet;
+}
+
+hr {
+    width: 60%;
+
+    border: none;
+
+    height: 2px;
+
+    background: purple;
+
+    box-shadow: 0px 0px 10px violet;
+
+    margin: 30px auto;
+}
+
+.socials {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+}
+
+.social-icon {
+    width: 50px;
+
+    height: 50px;
+
+    transition: 0.3s ease;
+
+    box-shadow: none;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+.popup {
+    background: rgb(30, 30, 30);
+
+    color: violet;
+
+    width: 300px;
+
+    padding: 20px;
+
+    border-radius: 20px;
+
+    position: fixed;
+
+    top: 20px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    box-shadow: 0px 0px 20px purple;
+
+    animation: slideDown 0.5s ease;
+
+    transition: 0.5s ease;
+
+    z-index: 1000;
+}
+
+@keyframes slideDown {
+
+    from {
+        opacity: 0;
+
+        transform:
+        translateX(-50%)
+        translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+        translateX(-50%)
+        translateY(0);
+    }
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: violet;
+
+    text-decoration: none;
+
+    margin: 15px;
+
+    font-size: 18px;
+
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: white;
+}
+
+footer {
+    color: violet;
+
+    margin-top: 30px;
+
+    font-size: 14px;
+
+    padding-bottom: 20px;
+}
+
+.hidden {
+    opacity: 0;
+
+    transform: translateY(30px);
+
+    transition: all 1s ease;
+}
+
+.show {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+
+    .card {
+        width: 90%;
+    }
+
+    .profile-img {
+        width: 120px;
+
+        height: 120px;
+    }
+
+    .languages-box,
+    .hobbies-box {
+        width: 80%;
+    }
+}
