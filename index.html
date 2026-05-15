@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Mikarin Profiles</title>
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div id="popup" class="popup">
+
+        <p>Yaho, how is your day?</p>
+
+    </div>
+
+    <!-- MAIN CARD -->
+
+    <div class="card">
+
+        <!-- NAVBAR -->
+
+        <nav class="navbar">
+
+    <div
+    class="menu-toggle"
+    id="menu-toggle">
+
+        ☰
+
+    </div>
+
+    <ul class="nav-links"
+    id="nav-links">
+
+        <li>
+            <a href="waifu.html">
+                Waifu
+            </a>
+        </li>
+
+        <li>
+            <a href="music.html">
+                Music
+            </a>
+        </li>
+
+    </ul>
+
+</nav>
+
+        <!-- TITLE -->
+
+        <h1 class="hidden">
+
+            Oitsuuu
+
+        </h1>
+
+        <!-- PROFILE IMAGE -->
+
+        <img
+        src="aset/finale.jpeg"
+        alt="Profile Picture"
+        class="profile-img hidden">
+
+        <!-- TYPING TEXT -->
+
+        <p id="typing" class="hidden"></p>
+
+        <!-- LANGUAGES -->
+
+        <h3 class="hidden">
+
+            Languages
+
+        </h3>
+
+        <hr>
+
+        <ul class="languages-box hidden">
+
+            <li>Indonesian</li>
+
+            <li>English</li>
+
+            <li>Japanese</li>
+
+        </ul>
+
+        <!-- HOBBIES -->
+
+        <h3 class="hidden">
+
+            Hobbies
+
+        </h3>
+
+        <hr>
+
+        <ul class="hobbies-box hidden">
+
+            <li>Watching Anime</li>
+
+            <li>Reading Manga</li>
+
+            <li>Learning Nihongo</li>
+
+            <li>Roasting embege</li>
+
+            <li>Scroll Fesnuk</li>
+
+        </ul>
+
+        <!-- SOCIAL MEDIA -->
+
+        <h3 class="hidden">
+
+            Social Media
+
+        </h3>
+
+        <hr>
+
+        <div class="socials hidden">
+
+            <a
+            href="https://instagram.com/Mikarins_"
+            target="_blank">
+
+                <img
+                src="aset/instagram.png"
+                class="social-icon"
+                alt="Instagram">
+
+            </a>
+
+            <a
+            href="https://discord.com/users/_midnightsummer"
+            target="_blank">
+
+                <img
+                src="aset/discord.png"
+                class="social-icon"
+                alt="Discord">
+
+            </a>
+
+        </div>
+
+        <!-- GUESTBOOK -->
+
+        <h3 class="hidden">
+
+            Guestbook 
+
+        </h3>
+
+        <hr>
+
+        <p class="hidden">
+
+            Leave a message for me
+
+        </p>
+
+        <div class="guestbook hidden">
+
+            <textarea
+            id="message"
+            placeholder="Write something..."></textarea>
+
+            <button onclick="addMessage()">
+
+                Send Message
+
+            </button>
+
+            <div id="messages"></div>
+
+        </div>
+
+        <br>
+
+        <!-- BACK TO TOP -->
+
+        <button onclick="scrollToTop()">
+
+            Back to Top ↑
+
+        </button>
+
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        Made by Mika
+
+    </footer>
+
+    <!-- SCRIPT -->
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>

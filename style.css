@@ -1,0 +1,805 @@
+body {
+
+    background-image:
+    linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    ),
+    url("aset/bg.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+
+    text-align: center;
+
+    font-family: Arial, sans-serif;
+
+    margin: 0;
+
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+
+    body {
+
+        background-attachment: scroll;
+    }
+}
+
+.card {
+
+    background: rgba(0,0,0,0.35);
+
+    backdrop-filter: blur(12px);
+
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid
+    rgba(255,255,255,0.08);
+
+    width: 350px;
+
+    margin: 50px auto;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    box-shadow:
+    0 0 15px red,
+    0 0 30px crimson,
+    0 0 50px hotpink;
+
+    transition: 0.4s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.languages-box {
+
+    background: rgba(0,0,0,0.25);
+
+    backdrop-filter: blur(10px);
+
+    -webkit-backdrop-filter: blur(10px);
+
+    border: 1px solid
+    rgba(255,255,255,0.08);
+
+    border-radius: 20px;
+
+    padding: 20px;
+
+    width: 250px;
+
+    margin: 20px auto;
+
+    list-style: none;
+
+    box-shadow:
+    0 0 15px red,
+    0 0 30px crimson;
+}
+
+.hobbies-box {
+
+    background: rgba(0,0,0,0.25);
+
+    backdrop-filter: blur(10px);
+
+    -webkit-backdrop-filter: blur(10px);
+
+    border: 1px solid
+    rgba(255,255,255,0.08);
+
+    border-radius: 20px;
+
+    padding: 20px;
+
+    width: 250px;
+
+    margin: auto;
+
+    list-style: none;
+
+    box-shadow:
+    0 0 15px red,
+    0 0 30px crimson;
+}
+
+.profile-img {
+    width: 180px;
+
+    height: 180px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    box-shadow: 0px 0px 20px white;
+
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+h1 {
+    color: rgb(211, 131, 245);
+
+    font-size: 40px;
+}
+
+h3 {
+    color: rgb(211, 131, 245);
+
+    font-size: 25px;
+}
+
+p,
+ul {
+    color: rgb(197, 115, 235);
+
+    font-size: 18px;
+}
+
+ul {
+    padding: 0;
+
+    margin: 0;
+
+    list-style: none;
+}
+
+li {
+    margin: 10px;
+}
+
+button {
+
+    background: rgba(0,0,0,0.35);
+
+    backdrop-filter: blur(10px);
+
+    -webkit-backdrop-filter: blur(10px);
+
+    border: 1px solid
+    rgba(255,255,255,0.08);
+
+    color: white;
+
+    padding: 8px 16px;
+
+    font-size: 14px;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+
+    box-shadow:
+    0 0 10px red,
+    0 0 20px crimson;
+
+    margin-top: 10px;
+}
+
+button:hover {
+    transform: scale(1.05);
+
+    box-shadow:
+    0 0 20px red,
+    0 0 40px hotpink;
+}
+
+hr {
+    width: 60%;
+
+    border: none;
+
+    height: 2px;
+
+    background: purple;
+
+    box-shadow: 0px 0px 10px violet;
+
+    margin: 30px auto;
+}
+
+.socials {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+}
+
+.social-icon {
+    width: 50px;
+
+    height: 50px;
+
+    transition: 0.3s ease;
+
+    box-shadow: none;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+.popup {
+    background: rgb(30, 30, 30);
+
+    color: violet;
+
+    width: 300px;
+
+    padding: 20px;
+
+    border-radius: 20px;
+
+    position: fixed;
+
+    top: 20px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    box-shadow: 0px 0px 20px purple;
+
+    animation: slideDown 0.5s ease;
+
+    transition: 0.5s ease;
+
+    z-index: 1000;
+}
+
+@keyframes slideDown {
+
+    from {
+        opacity: 0;
+
+        transform:
+        translateX(-50%)
+        translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+        translateX(-50%)
+        translateY(0);
+    }
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: violet;
+
+    text-decoration: none;
+
+    margin: 15px;
+
+    font-size: 18px;
+
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: white;
+}
+
+footer {
+    color: violet;
+
+    margin-top: 30px;
+
+    font-size: 14px;
+
+    padding-bottom: 20px;
+}
+
+.hidden {
+    opacity: 0;
+
+    transform: translateY(30px);
+
+    transition: all 1s ease;
+}
+
+.show {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+
+    .card {
+        width: 90%;
+    }
+
+    .profile-img {
+        width: 120px;
+
+        height: 120px;
+    }
+
+    .languages-box,
+    .hobbies-box {
+        width: 80%;
+    }
+}
+
+.artist {
+
+    font-size: 14px;
+
+    margin-top: 10px;
+
+    color: rgb(180, 180, 180);
+}
+
+.artist a {
+
+    color: violet;
+
+    text-decoration: none;
+}
+
+.artist a:hover {
+
+    color: white;
+}
+
+.waifu-img {
+
+    width: 100%;
+
+    max-height: 400px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    box-shadow:
+    0 0 15px red,
+    0 0 30px hotpink;
+
+    transition: 0.3s ease;
+}
+
+@keyframes pop {
+
+    0% {
+
+        transform: scale(1);
+    }
+
+    50% {
+
+        transform: scale(1.15);
+    }
+
+    100% {
+
+        transform: scale(1);
+    }
+}
+
+.waifu-img {
+
+    width: 100%;
+
+    max-height: 400px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    transition: 0.3s ease;
+}
+
+.waifu-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+    0 0 20px red,
+    0 0 40px hotpink,
+    0 0 60px crimson;
+}
+
+.waifu-card {
+
+    background: rgba(0,0,0,0.25);
+
+    backdrop-filter: blur(10px);
+
+    -webkit-backdrop-filter: blur(10px);
+
+    border: 1px solid
+    rgba(255,255,255,0.08);
+
+    border-radius: 20px;
+
+    padding: 15px;
+
+    width: 280px;
+
+    margin: 20px;
+
+    box-shadow:
+    0 0 15px red,
+    0 0 30px crimson;
+
+    transition: 0.3s ease;
+}
+
+.waifu-card:hover {
+
+    transform: scale(1.03);
+
+    box-shadow:
+    0 0 20px red,
+    0 0 40px hotpink;
+}
+
+.banner-img {
+
+    width: 100%;
+
+    max-width: 500px;
+
+    border-radius: 20px;
+
+    object-fit: cover;
+
+    box-shadow: 0px 0px 20px violet;
+
+    margin-bottom: 20px;
+}
+
+.music-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+.music-card {
+
+    background: rgba(0,0,0,0.25);
+
+    backdrop-filter: blur(10px);
+
+    -webkit-backdrop-filter: blur(10px);
+
+    border: 1px solid
+    rgba(255,255,255,0.08);
+
+    border-radius: 20px;
+
+    padding: 20px;
+
+    margin-bottom: 30px;
+
+    width: 300px;
+
+    box-shadow:
+    0 0 15px red,
+    0 0 30px crimson;
+
+    transition: 0.3s ease;
+}
+
+.music-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+    0 0 20px red,
+    0 0 40px hotpink,
+    0 0 60px crimson;
+}
+
+.music-img {
+
+    width: 100%;
+
+    border-radius: 15px;
+
+    object-fit: cover;
+
+    box-shadow:
+    0 0 15px red,
+    0 0 30px hotpink;
+
+    transition: 0.3s ease;
+}
+
+.music-img:hover {
+
+    transform: scale(1.02);
+}
+
+.guestbook {
+
+    margin-top: 30px;
+}
+
+.guestbook input,
+.guestbook textarea {
+
+    width: 90%;
+
+    padding: 15px;
+
+    margin-top: 10px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    background: rgba(255,255,255,0.05);
+
+    color: white;
+
+    outline: none;
+
+    font-size: 15px;
+}
+
+.guestbook textarea {
+
+    height: 120px;
+
+    resize: none;
+}
+
+.message-card {
+
+    background: rgba(255,255,255,0.04);
+
+    padding: 15px;
+
+    margin-top: 20px;
+
+    border-radius: 15px;
+
+    text-align: left;
+
+    box-shadow:
+    0 0 15px rgba(238,130,238,0.15);
+}
+
+.message-card h4 {
+
+    color: violet;
+
+    margin-bottom: 10px;
+}
+
+.custom-popup {
+
+    position: fixed;
+
+    top: 30px;
+
+    left: 50%;
+
+    transform:
+    translateX(-50%)
+    translateY(-30px);
+
+    background: rgba(0,0,0,0.35);
+
+    backdrop-filter: blur(12px);
+
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid
+    rgba(255,255,255,0.08);
+
+    color: white;
+
+    padding: 18px 30px;
+
+    border-radius: 20px;
+
+    box-shadow:
+    0 0 15px red,
+    0 0 30px crimson,
+    0 0 50px hotpink;
+
+    opacity: 0;
+
+    transition: 0.5s ease;
+
+    z-index: 9999;
+
+    font-size: 16px;
+}
+
+.show-popup {
+
+    opacity: 1;
+
+    transform: translateX(-50%) translateY(0);
+}
+
+.light-mode {
+
+    background: #f5f5f5;
+
+    color: black;
+}
+
+.light-mode .card {
+
+    background: white;
+
+    color: black;
+}
+
+.light-mode a {
+
+    color: black;
+}
+
+.navbar {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    position: relative;
+}
+
+.logo {
+
+    color: white;
+}
+
+.nav-links {
+
+    display: flex;
+
+    gap: 20px;
+
+    list-style: none;
+}
+
+.nav-links a {
+
+    text-decoration: none;
+
+    color: white;
+}
+
+.menu-toggle {
+
+    display: none;
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+    color: white;
+}
+
+.navbar {
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    align-items: center;
+
+    position: relative;
+}
+
+
+/* BURGER */
+
+.menu-toggle {
+
+    display: block;
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+    color: white;
+
+    z-index: 1000;
+}
+
+
+/* MENU */
+
+.nav-links {
+
+    display: none;
+
+    flex-direction: column;
+
+    background: rgba(0,0,0,0.35);
+
+    backdrop-filter: blur(12px);
+
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid
+    rgba(255,255,255,0.08);
+
+    position: absolute;
+
+    top: 60px;
+
+    right: 0;
+
+    width: 200px;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    align-items: center;
+
+    list-style: none;
+
+    z-index: 999;
+
+    box-shadow:
+    0 0 15px red,
+    0 0 30px crimson,
+    0 0 50px hotpink;
+
+    gap: 20px;
+}
+
+
+/* LINK */
+
+.nav-links a {
+
+    text-decoration: none;
+
+    color: white;
+
+    font-size: 18px;
+}
+
+
+/* SHOW MENU */
+
+.nav-links.show {
+
+    display: flex;
+}
